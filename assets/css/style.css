@@ -1,0 +1,82 @@
+html {
+    min-height: 100%;
+    background-image: url(../images/wov.png);
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1, .lead, .a {
+  text-align: center;
+    background-image: url(../images/wov.png);
+    margin:0px;
+}
+
+.center { 
+  margin: 0 auto; 
+  box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
+  display:inline-block;
+}
+
+.vertical-center {
+    background-image: url(../images/wov.png);
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 0px;
+}
+
+.img-fluid {
+    width: 100%;
+    box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.btn-xlarge {
+    padding: 18px 28px;
+    font-size: 85px;
+    line-height: normal;
+
+    border-radius: 100px;
+    background-color: #516a31;
+    box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
+    width:100%;
+}
+.btn-xlboolean {
+    padding: 18px 28px;
+    font-size: 40px;
+    line-height: normal;
+    border-radius: 100px;
+    background-color: #516a31;
+    box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
+    outline: none;
+  }
+
+.choice {
+    background-image: url(../images/wov.png);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 0px;
+     
+}
+@media (max-width: 768px) {
+  .btn-responsive {
+    font-size:100%;
+  }
+}
+
+/*.container {
+    width: 200px;
+    overflow: hidden;
+    display: block;
+    height: 360px;
+}
+
+#glass {
+    margin-left: -220px;
+}
+*/
