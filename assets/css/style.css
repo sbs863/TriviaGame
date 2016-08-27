@@ -39,9 +39,9 @@ h1, h2, .lead, .a {
   padding-top:20px;
 }
 
-.name {
+/*.name {
   padding-top:75px;
-}
+}*/
 
 .img-fluid {
     width: 100%;
@@ -91,8 +91,11 @@ h1, h2, .lead, .a {
       align-items: center;
       text-align: center;
       margin-bottom: 0px;
-      width: 100%
+      width: 100%;
      
+}
+.questions {
+  width:100%;
 }
 
 /*.choices {
