@@ -1,32 +1,45 @@
 html {
     min-height: 100%;
     background-image: url(../images/wov.png);
+
 }
 
 body {
     min-height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Slab', serif;
 }
+
+
 
 h1, .lead, .a {
   text-align: center;
     background-image: url(../images/wov.png);
     margin:0px;
+
 }
 
 .center { 
   margin: 0 auto; 
   box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
-  display:inline-block;
 }
 
 .vertical-center {
     background-image: url(../images/wov.png);
-      display: flex;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 100px;
+}
+
+.contents {
+  padding-top:20px;
+}
+
+.name {
+  padding-top:75px;
 }
 
 .img-fluid {
@@ -34,25 +47,39 @@ h1, .lead, .a {
     box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
+.nps {
+    width: 960px;
+    box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
 .btn-xlarge {
-    padding: 18px 28px;
-    font-size: 85px;
+    padding: 5px 14px;
+    font-size: 75px;
     line-height: normal;
 
-    border-radius: 100px;
+    border-radius: 10px;
+    background-color: #516a31;
+    box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
+    width:100%;
+}
+.playAgain {
+    padding: 5px 14px;
+    font-size: 52px;
+    line-height: normal;
+    border-radius: 10px;
     background-color: #516a31;
     box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
     width:100%;
 }
 .btn-xlboolean {
-    padding: 18px 28px;
+    padding: 5px 14px;
     font-size: 40px;
     line-height: normal;
-    border-radius: 100px;
+    border-radius: 10px;
     background-color: #516a31;
     box-shadow: 0 22px 30px rgba(0, 0, 0, 0.9);
     outline: none;
-  }
+}
 
 .choice {
     background-image: url(../images/wov.png);
