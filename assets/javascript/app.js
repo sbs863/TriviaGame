@@ -98,7 +98,7 @@ $(document).ready(function() {
                 }
                 //  ..  setTimeout()
                 i++; //  increment the counter
-            }, 5000);
+            }, 10000);
 
             $('.True').val();
             $('.False').val();
