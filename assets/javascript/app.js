@@ -1,6 +1,6 @@
 var video = $('<video class=center width="960" height="540" responsive autoplay loop></video>')
-    .append('<source src="assets/Videos/Grand%20Canyon.mp4" type="video/mp4" />');
-var question = '<h1>"Some rock formations within the Grand Canyon can be traced back more then 300 million years."</h1>';
+            .append('<source src="assets/Videos/Grand%20Canyon.mp4" type="video/mp4" />');
+var question = '<h2 class = question>"Some rock formations within the Grand Canyon can be traced back more than 300 million years."</h2>';
 var response =
                 '<div class=choice>'
                     +'<button type="button" class="btn-xlboolean btn-primary True" data-toggle="button" aria-pressed="false" autocomplete="off">True</button>'
@@ -14,8 +14,9 @@ var reset =
                 + '<div class="container-fluid">'
                 + '<img src="assets/images/NPS.png" class="img-fluid nps" alt="Responsive image">'
                 + '<hr class="m-y-2">'
-                + '<h1 class="display-3">                  </h1>'
-                + '<p class="lead">                        </p>'
+                + '<h2> Correct: </h2>'
+                + '<h2> Incorrect: <h2>'
+                + '<hr class="m-y-2">'
                 + '<a class="btn-primary btn-xlarge btn-responsive playAgain" href="#" role="button">Play Again</a>'
                 + '</div>'
         + '</div>';
@@ -38,10 +39,14 @@ var questions = [
     "Bryce Canyon Park exists in three distinct climatic zones.",
     "The park is located on an active fault and the last major earthquake occurred over 5,000 years ago.",
     "Subsistence farming is not allowed within the park.",
-    "Conservation groups are seeking federal protection for the Joshua Trees as the are being threatened by climate change. ",
+    "Conservation groups are seeking federal protection for the Joshua Trees as they are being threatened by climate change. ",
     "Redwood national park is home to the tallest trees on Earth.",
     "Yellowstone national park is the most visited national park.",
     "The 2.2 mile hike to Angels Landing is consistently listed as one of the most dangerous hikes in the world.",
+]
+
+var answers = [
+    "False",    "True",    "True",    "True",    "False",    "True",    "True",    "True",    "False",    "True",
 ]
 
 var names = [ 
@@ -54,11 +59,11 @@ $(document).ready(function() {
 
     $('a').on("click", function() {
         $( "div" ).removeClass( "content" ).addClass( "contents" );
-        $(".contents").before("<h1 class=name>Testing</h1>");
+        $(".contents").before("<h1 class=name>Grand Canyon National Park - Arizona</h1>");
         $(".contents").html(video);
         $('body').append(question);
+        
         $('body').append(response);
-
 
         $(document).ready(function() {
             $('.True').click(function() {
@@ -73,34 +78,36 @@ $(document).ready(function() {
             var i = 0; //  set your counter to 1
 
             function myLoop() { //  create a loop function
-                if ($('.True').val() === 'True') {
-                    guessTrue++;
-
-                } else if ($('.False').val() === 'False') {
-                    guessFalse++;
-
-                }
+debugger
                 setTimeout(function() { //  call a 10s setTimeout when the loop is called
                     $(".contents").html(videos[i]);//  cycles videos
-                    $("h1").html(questions[i]); // assigns question
+                    $("h2").html(questions[i]); // assigns question
                     $(".name").html(names[i]);// assigns name
+                    $(".choice").html(response);
+                    
+                    
                     i++; //  increment the counter
                     if (i <= 9) { //  if the counter <= 9, call the loop function
                         myLoop(); //  ..  again which will trigger another
-                        console.log(i);
+                        console.log(answers[i]);
+                        if (answers[i] == $('.True')) {
+                            // console.log("True");
+                        } else {
+                            // console.log("False");
+                        }
                     } 
                     if (i > 9) {
-                        console.log(guessTrue)
+                        
                         $('body').html(reset);
                     }
                     //  ..  setTimeout()
-                }, 10000);
-                $('.True').val('');
-                $('.False').val('');
+                }, 3000);
+                $('.True').val();
+                $('.False').val();
+
 
 
             }
-
             myLoop(); //  start the loop
         });
     });
