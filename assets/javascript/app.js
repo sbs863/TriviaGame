@@ -1,4 +1,4 @@
-var video = $('<video class=center width="960" height="540" responsive autoplay loop></video>')
+var video = $('<video class=center width="960" height="540" responsive autoplay loop preload=auto></video>')
     .append('<source src="assets/Videos/Grand%20Canyon.mp4" type="video/mp4" />');
 var question = '<h2 class = question>"Some rock formations within the Grand Canyon can be traced back more than 300 million years."</h2>';
 
@@ -19,15 +19,15 @@ var reset =
             + '</div>';
 
 var videos = [
-    "'<video class=center width='960' height='540' responsive autoplay loop source src='assets/Videos/Arches.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/Badlands.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/Bryce%20Canyon.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/Grand%20Teton.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/American%20Samoa.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/Joshua%20Tree.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/Redwood.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/Yellowstone.mp4' type='video/mp4'/>'",
-    "'<video class=center width='960' height='540' muted responsive autoplay loop source src='assets/Videos/Zion.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' responsive autoplay loop source preload=auto src='assets/Videos/Arches.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/Badlands.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/Bryce%20Canyon.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/Grand%20Teton.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/American%20Samoa.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/Joshua%20Tree.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/Redwood.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/Yellowstone.mp4' type='video/mp4'/>'",
+    "'<video class=center width='960' height='540' muted responsive autoplay loop source preload=auto src='assets/Videos/Zion.mp4' type='video/mp4'/>'",
 ]
 
 var questionGC = "Some rock formations within the Grand Canyon can be traced back more than 300 million years.";
